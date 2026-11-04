@@ -86,16 +86,15 @@
   .result .bandnote { margin: 0 0 10px; color: var(--soft); max-width: 62ch; }
   .result .position { margin: 0 0 22px; color: var(--ink); max-width: 62ch; }
   .result .position:empty { margin: 0 0 12px; }
-  .groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-bottom: 24px; }
-  @media (min-width: 1040px) { .groups { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
-  @media (max-width: 400px) { .groups { grid-template-columns: minmax(0, 1fr); } }
-  .gcard { background: var(--card); border-radius: 12px; padding: 16px 18px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+  .groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 14px; row-gap: 8px; margin-bottom: 24px; }
+  @media (max-width: 559px) { .groups { grid-template-columns: minmax(0, 1fr); } }
+  .gcard { background: var(--card); border-radius: 12px; padding: 16px 18px; display: grid; grid-row: span 4; grid-template-rows: subgrid; row-gap: 8px; align-content: start; min-width: 0; margin-bottom: 6px; }
   .gcard .glabel { font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); font-weight: 600; line-height: 1.35; }
-  .gcard .gscore { font-family: var(--font-display); font-size: 34px; font-weight: 600; color: var(--ink); line-height: 1; font-variant-numeric: tabular-nums; margin-top: auto; padding-top: 6px; }
+  .gcard .gscore { font-family: var(--font-display); font-size: 34px; font-weight: 600; color: var(--ink); line-height: 1; font-variant-numeric: tabular-nums; padding-top: 6px; }
   .gcard .gscore small { font-size: 15px; font-weight: 400; color: var(--muted); }
   .gcard .gbar { height: 8px; background: var(--cream); border-radius: 4px; overflow: hidden; }
   .gcard .gbar span { display: block; height: 100%; width: 0; background: var(--red); transition: width .25s ease; }
-  .gcard .gweak { font-size: 14px; color: var(--muted); margin: 0; }
+  .gcard .gweak { font-size: 14px; line-height: 1.5; color: var(--muted); margin: 0; }
   .moves h3 { font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--red); font-weight: 600; margin: 0 0 10px; }
   .move { display: grid; grid-template-columns: 44px 1fr; gap: 12px; align-items: start; padding-block: 12px; border-top: 1px solid var(--line); }
   .move:last-child { border-bottom: 1px solid var(--line); }
