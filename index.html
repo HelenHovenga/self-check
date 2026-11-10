@@ -157,7 +157,7 @@
     <div class="contact">
       <p class="lead">Want to talk your result through?</p>
       <p>I work with Chief People Officers and their teams to lead AI transformation: the Executive session, the steering committee, the champions, and the People &amp; Culture team of the future.</p>
-      <p class="addr">helen@helenhovenga.com &nbsp;·&nbsp; 0418 868 293 &nbsp;·&nbsp; <a href="https://helenhovenga.com.au">helenhovenga.com.au</a></p>
+      <p class="addr">helen@helenhovenga.com &nbsp;·&nbsp; 0418 868 293 &nbsp;·&nbsp; <a href="https://helenhovenga.com">helenhovenga.com</a></p>
     </div>
   </section>
 
@@ -265,7 +265,7 @@
     ALL.forEach(e => lines.push((answers[e.id] || "–") + "  " + e.name));
     const weak = weakest();
     if (weak.length) { lines.push("", "Start here:"); weak.forEach(e => lines.push("- " + e.name + " (" + answers[e.id] + "): " + e.move)); }
-    lines.push("", "Talk it through: helen@helenhovenga.com, 0418 868 293, helenhovenga.com.au");
+    lines.push("", "Talk it through: helen@helenhovenga.com, 0418 868 293, helenhovenga.com");
     return lines.join("\n");
   }
   function band(total) { return BANDS.find(b => total < b[0]); }
